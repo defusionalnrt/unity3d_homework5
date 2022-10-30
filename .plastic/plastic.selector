@@ -1,0 +1,4 @@
+repository "ufo@delusional_nrt@cloud.cn"
+  path "/"
+    br "/main"
+    co "/main"
