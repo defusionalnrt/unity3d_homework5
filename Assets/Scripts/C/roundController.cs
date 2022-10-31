@@ -44,20 +44,20 @@ public class roundController : MonoBehaviour{
             return;
         }
         time += Time.deltaTime;
-        if(roundCount > 10){
+        if(roundCount > 6){
             gameStart = false;
             return;
         }
-        if(subRoundCount > 8){
+        if(subRoundCount > 10){
             subRoundCount = 0;
             ++roundCount;
             diskCount += roundCount;
         }
-        if(time > 3.0f){
+        if(time > 2.5f - roundCount * 0.15f){
             time = 0f;
             ++subRoundCount;
             for(int i = 0;i < diskCount;++i){
-                GameObject disk = diskfactory.getWaitingDisk(Random.Range(1,3));
+                GameObject disk = diskfactory.getWaitingDisk((int)Random.Range(1,4));
                 disk.transform.position = new Vector3(0,0,0);
                 disk.SetActive(true);
                 actionmanager.fly(disk);

@@ -12,7 +12,7 @@ public class topController:MonoBehaviour,sceneController,userAction {
         load();
     }
     public void load(){
-        Debug.Log("Loading...");
+        Debug.Log("loading reso");
         this.gameObject.AddComponent<totalGUI>();
         totalgui = singleton<totalGUI>.Instance;
 

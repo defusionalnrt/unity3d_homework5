@@ -50,7 +50,7 @@ public class totalGUI : MonoBehaviour{
             curGUI.fontSize = 20;
             curGUI.alignment = TextAnchor.MiddleCenter;
             GUI.Button(new Rect(30, 10, Screen.width - 60, 50), outputText, curGUI);
-            if (Input.GetButtonDown("Fire1")){
+            if (!gameFailed && Input.GetButtonDown("Fire1")){
                 useraction.hit(Input.mousePosition);
             }
         }

@@ -77,14 +77,14 @@ public class diskFactory : MonoBehaviour{
             diskData.level = 2;
             diskData.m = 2F + Random.Range(-1F, 1F);
             diskData.score = 100;
-            diskData.speed = new Vector3(Random.Range(-2F, 2F), Random.Range(-2F, 2F), Random.Range(-2F, 2F));
+            diskData.speed = new Vector3(Random.Range(-1F, 1F), Random.Range(-1F, 1F), Random.Range(-1F, 1F));
             diskData.F = new Vector3(Random.Range(-2F, 2F), Random.Range(-2F, 2F), Random.Range(-2F, 2F));
         }
         else if(level == 3){
             diskData.level = 3;
             diskData.m = 3F + Random.Range(-1F, 1F);
             diskData.score = 300;
-            diskData.speed = new Vector3(Random.Range(-5F, 5F), Random.Range(-5F, 5F), Random.Range(-5F, 5F));
+            diskData.speed = new Vector3(Random.Range(-2.5F, 2.5F), Random.Range(-2.5F, 2.5F), Random.Range(-2.5F, 2.5F));
             diskData.F = new Vector3(Random.Range(-5F, 5F), Random.Range(-5F, 5F), Random.Range(-5F, 5F));
 
         }

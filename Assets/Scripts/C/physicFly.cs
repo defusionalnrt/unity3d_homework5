@@ -21,7 +21,6 @@ public class physicFly : ScriptableObject{
         this.gameObject.GetComponent<Rigidbody>().velocity = speed;
         this.gameObject.GetComponent<ConstantForce>().force = F;
         this.gameObject.GetComponent<ConstantForce>().torque = new Vector3(0.2F,0,-0.2F);
-
     }
 
     // Update is called once per frame
